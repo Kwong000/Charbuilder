@@ -2,20 +2,66 @@
 
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
   <tabs>
       <Tab text="Main Menu">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
         </content>
       </Tab>
-    <Tab text="Stamp Act - March 22, 1765" />
-    <Tab text="Boston massacre - March 5, 1770" />
-      <Tab text="Boston tea party -  December 16, 1773" />
-      <Tab text="Battle of Bunker Hill - June 17, 1775" />
-      <Tab text="America Declares Independence - July 4, 1776" />
-      <Tab text="Siege of Yorktown - Sep 28, 1781 – Oct 19, 1781" />
+    <Tab text="Stamp Act - March 22, 1765">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TextArea layoutX="14.0" layoutY="14.0" prefHeight="342.0" prefWidth="314.0" text="The Stamp Act 1765, also known as the Duties &#10;in American Colonies Act 1765, was an Act of the &#10;Parliament of Great Britain which imposed a direct &#10;tax on the British colonies in America and required &#10;that many printed materials in the colonies be &#10;produced on stamped paper from London which &#10;included an embossed revenue stamp. Printed &#10;materials included legal documents, magazines, &#10;playing cards, newspapers, and many other types &#10;of paper used throughout the colonies, and it had &#10;to be paid in British currency, not in colonial paper &#10;money.&#10;&#10;The purpose of the tax was to pay for British military &#10;troops stationed in the American colonies after the &#10;French and Indian War, but the colonists had &#10;never feared a French invasion to begin with, and &#10;they contended that they had already paid their &#10;share of the war expenses. Colonists suggested &#10;that it was actually a matter of British patronage &#10;to surplus British officers and career soldiers who&#10; should be paid by London.&#10;&#10;The Stamp Act was very unpopular among &#10;colonists. A majority considered it a violation of &#10;their rights as Englishmen to be taxed without their&#10; consent—consent that only the colonial legislatures&#10; could grant. Their slogan was &quot;No taxation without&#10;representation&quot;. Colonial assemblies sent petitions &#10;and protests, and the Stamp Act Congress held in &#10;New York City was the first significant joint colonial &#10;response to any British measure when it petitioned &#10;Parliament and the King. - Wikipedia&#10;" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="370.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+         </content></Tab>
+    <Tab text="Boston massacre - March 5, 1770">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TextArea layoutX="14.0" layoutY="14.0" prefHeight="342.0" prefWidth="314.0" text="The Boston Massacre (known in Great Britain as the &#10;Incident on King Street) was a confrontation in &#10;Boston on March 5, 1770, in which nine British soldiers&#10; shot several of a crowd of three or four hundred who &#10;were harassing them verbally and throwing various &#10;projectiles. The event was heavily publicized as &quot;a &#10;massacre&quot; by leading Patriots such as Paul Revere &#10;and Samuel Adams. British troops had been stationed &#10;in the Province of Massachusetts Bay since 1768 in &#10;order to support crown-appointed officials and to &#10;enforce unpopular Parliamentary legislation.&#10;&#10;Amid tense relations between the civilians and the &#10;soldiers, a mob formed around a British sentry and &#10;verbally abused him. He was eventually supported&#10; by seven additional soldiers, led by Captain &#10;Thomas Preston, who were hit by clubs, stones, &#10;and snowballs. Eventually, one soldier fired, &#10;prompting the others to fire without an order by &#10;Preston. The gunfire instantly killed three people &#10;and wounded eight others, two of whom later died &#10;of their wounds.&#10;&#10;The crowd eventually dispersed after acting &#10;governor Thomas Hutchinson promised an inquiry, &#10;but they reformed the next day, prompting the &#10;withdrawal of the troops to Castle Island. Eight &#10;soldiers, one officer, and four civilians were &#10;arrested and charged with murder, and they were &#10;defended by future U.S. president John Adams. &#10;Six of the soldiers were acquitted; the other two &#10;were convicted of manslaughter and given reduced &#10;sentences. The two found guilty of manslaughter &#10;were sentenced to branding on their hand.&#10;" />
+               </children>
+            </Pane>
+         </content></Tab>
+      <Tab text="Boston tea party -  December 16, 1773">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TextArea layoutX="14.0" layoutY="14.0" prefHeight="342.0" prefWidth="314.0" text="The Boston Tea Party was an American political and &#10;mercantile protest on December 16, 1773, by the &#10;Sons of Liberty in Boston in colonial Massachusetts. &#10;The target was the Tea Act of May 10, 1773, which &#10;allowed the British East India Company to sell tea from &#10;China in American colonies without paying taxes apart &#10;from those imposed by the Townshend Acts. The Sons&#10; of Liberty strongly opposed the taxes in the &#10;Townshend Act as a violation of their rights. In r&#10;esponse, the Sons of Liberty, some disguised as &#10;Native Americans, destroyed an entire shipment of &#10;tea sent by the East India Company.&#10;&#10;The demonstrators boarded the ships and threw the &#10;chests of tea into the Boston Harbor. The British &#10;government considered the protest an act of &#10;treason and responded harshly. Days later the &#10;Philadelphia Tea Party, instead of destroying a &#10;shipment of tea, sent the ship back to England &#10;without unloading. The episodes escalated into &#10;the American Revolution, and the Boston Tea &#10;Party became an iconic event of American history. &#10;Since then other political protests such as the Tea &#10;Party movement have referred to themselves as &#10;historical successors to the Boston protest of 1773.&#10;&#10;The Tea Party was the culmination of a resistance &#10;movement throughout British America against the &#10;Tea Act, a tax passed by the British Parliament in &#10;1773. Colonists objected to the Tea Act believing &#10;it violated their rights as Englishmen to &quot;no taxation &#10;without representation&quot;, that is, to be taxed only &#10;by their own elected representatives and not by &#10;a parliament in which they were not represented. &#10;The well-connected East India Company also had &#10;been granted competitive advantages over colonial&#10;tea importers, who resented the move and feared &#10;additional infringement on their business. &#10;Protesters had prevented the unloading of tea &#10;in three other colonies, but in Boston, embattled &#10;Royal Governor Thomas Hutchinson refused to &#10;allow the tea to be returned to Great Britain.&#10;" />
+               </children>
+            </Pane>
+         </content></Tab>
+      <Tab text="Battle of Bunker Hill - June 17, 1775">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TextArea layoutX="14.0" layoutY="14.0" prefHeight="342.0" prefWidth="314.0" text="The Battle of Bunker Hill was fought on June 17, 1775, &#10;during the Siege of Boston in the first stage of the &#10;American Revolutionary War. The battle is named after&#10; Bunker Hill in Charlestown, Massachusetts, which was&#10; peripherally involved. It was the original objective of &#10;both the colonial and British troops, though the majority&#10; of combat took place on the adjacent hill which &#10;became known as Breed's Hill.&#10;&#10;On June 13, 1775, the leaders of the colonial forces &#10;besieging Boston learned that the British were &#10;planning to send troops out from the city to fortify the &#10;unoccupied hills surrounding the city, which would &#10;give them control of Boston Harbor. In response, 1,200&#10;colonial troops under the command of William Prescott&#10; stealthily occupied Bunker Hill and Breed's Hill. &#10;They constructed a strong redoubt on Breed's Hill&#10; overnight, as well as smaller fortified lines across &#10;the Charlestown Peninsula.&#10;&#10;By daybreak of June 17, the British became aware &#10;of the presence of colonial forces on the Peninsula&#10; and mounted an attack against them. Two assaults&#10; on the colonial positions were repulsed with &#10;significant British casualties but the redoubt was &#10;captured on their third assault, after the defenders &#10;ran out of ammunition. The colonists retreated over &#10;Bunker Hill, leaving the British in control of the&#10; Peninsula.&#10;" />
+               </children>
+            </Pane>
+         </content></Tab>
+      <Tab text="America Declares Independence - July 4, 1776">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TextArea layoutX="14.0" layoutY="14.0" prefHeight="342.0" prefWidth="314.0" text="The Second Continental Congress adopted the &#10;Declaration of Independence on July 4, 1776, with 12 &#10;of the 13 colonies voting in favor and New York &#10;abstaining. The date that the Declaration was signed &#10;has long been the subject of debate. Thomas &#10;Jefferson, Benjamin Franklin, and John Adams all &#10;wrote that it was signed by Congress on the day when &#10;it was adopted on July 4, 1776. That assertion is &#10;seemingly confirmed by the signed copy of the &#10;Declaration, which is dated July 4. Additional support &#10;for the July 4 date is provided by the Journals of the &#10;Continental Congress, the official public record of the&#10; Continental Congress. The proceedings for 1776 were&#10; first published in 1777, and the entry for July 4 states &#10;that the Declaration was engrossed and signed on that &#10;date (the official copy was handwritten by Timothy&#10;Matlack).&#10;" />
+               </children>
+            </Pane>
+         </content></Tab>
+      <Tab text="Siege of Yorktown - Sep 28, 1781 – Oct 19, 1781">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TextArea layoutX="14.0" layoutY="14.0" prefHeight="342.0" prefWidth="314.0" text="The siege of Yorktown, also known as the Battle of &#10;Yorktown and the surrender at Yorktown, began &#10;September 28, 1781, and ended on October 19, &#10;1781, at exactly 10:30 am in Yorktown, Virginia. It was a&#10; decisive victory by a combined force of the American&#10; Continental Army troops led by General George &#10;Washington with support from Marquis de Lafayette &#10;and French Army troops led by Comte de Rochambeau&#10; and a French naval force commanded by Comte de &#10;Grasse over the British Army commanded by British &#10;Lieutenant General Charles Cornwallis.&#10;&#10;The siege of Yorktown was the last major land battle of &#10;the American Revolutionary War in North America, and&#10; led to the surrender of General Cornwallis and the &#10;capture of both him and his army. The Continental &#10;Army's victory at Yorktown prompted the British &#10;government to negotiate an end to the conflict&#10;" />
+               </children>
+            </Pane>
+         </content></Tab>
   </tabs>
 </TabPane>
