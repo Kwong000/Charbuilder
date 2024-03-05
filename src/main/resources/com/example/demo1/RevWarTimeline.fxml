@@ -7,8 +7,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
    <children>
       <TextArea layoutX="14.0" layoutY="72.0" prefHeight="314.0" prefWidth="299.0" text="Text body&#10;" />
       <TextArea layoutX="14.0" layoutY="14.0" prefHeight="45.0" prefWidth="299.0" text="Title&#10;" />
@@ -18,9 +17,6 @@
       <TextField layoutX="322.0" layoutY="360.0" prefHeight="26.0" prefWidth="185.0" />
       <Button layoutX="517.0" layoutY="360.0" mnemonicParsing="false" text="Comment" />
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="373.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../../../../../Downloads/BostonMassacreIMG.jpeg" />
-         </image>
       </ImageView>
    </children>
 </Pane>
