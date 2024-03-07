@@ -6,11 +6,15 @@ public class TimelinePage {
 
     String title;
     String textBody;
+    String notes;
     File repIMG;
-    public TimelinePage(String title, String textBody, File repIMG) {
+
+
+    public TimelinePage(String title, String textBody , String notes, File repIMG) {
         this.title = title;
         this.textBody = textBody;
         this.repIMG = repIMG;
+        this.notes = notes;
     }
     public String getTitle() {
         return title;
@@ -24,10 +28,17 @@ public class TimelinePage {
         return textBody;
     }
 
+
     public void setTextBody(String textBody) {
         this.textBody = textBody;
     }
+    public String getNotes() {
+        return notes;
+    }
 
+    public void setNotes(String notes) {
+        this.notes = notes;
+    }
     public File getRepIMG() {
         return repIMG;
     }
