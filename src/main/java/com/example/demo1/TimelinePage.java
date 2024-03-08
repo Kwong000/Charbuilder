@@ -1,9 +1,10 @@
 package com.example.demo1;
 
 import java.io.File;
+import java.util.ArrayList;
 
 public class TimelinePage {
-
+    static ArrayList<TimelinePage> allTimelinePages;
     String title;
     String textBody;
     String notes;
@@ -15,6 +16,10 @@ public class TimelinePage {
         this.textBody = textBody;
         this.repIMG = repIMG;
         this.notes = notes;
+        if (allTimelinePages == null) {
+            allTimelinePages = new ArrayList<TimelinePage>();
+        }
+        allTimelinePages.add(this);
     }
     public String getTitle() {
         return title;
