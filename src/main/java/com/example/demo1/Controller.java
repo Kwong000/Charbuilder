@@ -5,8 +5,12 @@ import javafx.scene.control.Label;
 
 public class Controller {
 
+
     public void initialize() {
-        // Miles will scan data file here
+      // scan data file to create all Time objects
+
+        // display first TimelineData object in View
+        TimelinePage p1 = TimelinePage.allTimelinePages.get(0);
     }
 
 }
