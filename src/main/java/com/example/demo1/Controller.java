@@ -16,8 +16,9 @@ public class Controller {
     public TextArea commentBox;
     public Button comButton;
 
-    public void initialize() {
+    public void initialize() throws Exception {
       // scan data file to create all Time objects
+        TimelinePage.readData();
 
         // display first TimelineData object in View
         TimelinePage p1 = TimelinePage.allTimelinePages.get(0);
