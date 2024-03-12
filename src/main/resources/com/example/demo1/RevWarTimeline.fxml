@@ -12,7 +12,7 @@
       <TextArea fx:id="titleBox" layoutX="14.0" layoutY="14.0" prefHeight="45.0" prefWidth="299.0" text="Title&#10;" />
       <Button fx:id="prevButton" layoutX="516.0" layoutY="291.0" mnemonicParsing="false" onAction="#pButtonAction" text="Prev" />
       <Button fx:id="nxtButton" layoutX="516.0" layoutY="324.0" mnemonicParsing="false" onAction="#nxtButtonAction" text="Next" />
-      <TextArea fx:id="commentBox" layoutX="322.0" layoutY="200.0" prefHeight="150.0" prefWidth="185.0" text="Comment area&#10;" />
+      <TextArea fx:id="commentBox" editable="false" layoutX="322.0" layoutY="200.0" prefHeight="150.0" prefWidth="185.0" text="Comment area&#10;" />
       <TextField layoutX="322.0" layoutY="360.0" prefHeight="26.0" prefWidth="185.0" />
       <Button fx:id="comButton" layoutX="517.0" layoutY="360.0" mnemonicParsing="false" onAction="#comButtonAction" text="Comment" />
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="353.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
