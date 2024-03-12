@@ -15,6 +15,7 @@ public class Controller {
     public Button nxtButton;
     public TextArea commentBox;
     public Button comButton;
+   int p;
 
     public void initialize() throws Exception {
       // scan data file to create all Time objects
@@ -27,14 +28,23 @@ public class Controller {
         TimelinePage p4 = TimelinePage.allTimelinePages.get(3);
         TimelinePage p5 = TimelinePage.allTimelinePages.get(4);
         TimelinePage p6 = TimelinePage.allTimelinePages.get(5);
+        titleBox.setText(p1.getTitle());
+        bodyBox.setText(p1.getTextBody());
 
-    }
-
-    public void pButtonAction(ActionEvent actionEvent) {
     }
 
     public void nxtButtonAction(ActionEvent actionEvent) {
+        if (p<5){
+            p++;
+        }
+
     }
+    public void pButtonAction(ActionEvent actionEvent) {
+        if (p>1){
+            p--;
+        }
+    }
+
 
     public void comButtonAction(ActionEvent actionEvent) {
     }
