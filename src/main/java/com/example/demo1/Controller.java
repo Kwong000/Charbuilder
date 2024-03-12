@@ -22,6 +22,12 @@ public class Controller {
 
         // display first TimelineData object in View
         TimelinePage p1 = TimelinePage.allTimelinePages.get(0);
+        TimelinePage p2 = TimelinePage.allTimelinePages.get(1);
+        TimelinePage p3 = TimelinePage.allTimelinePages.get(2);
+        TimelinePage p4 = TimelinePage.allTimelinePages.get(3);
+        TimelinePage p5 = TimelinePage.allTimelinePages.get(4);
+        TimelinePage p6 = TimelinePage.allTimelinePages.get(5);
+
     }
 
     public void pButtonAction(ActionEvent actionEvent) {

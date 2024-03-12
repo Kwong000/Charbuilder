@@ -8,11 +8,11 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controller">
    <children>
-      <TextArea fx:id="bodyBox" layoutX="14.0" layoutY="72.0" prefHeight="314.0" prefWidth="299.0" text="Text body&#10;" />
-      <TextArea fx:id="titleBox" layoutX="14.0" layoutY="14.0" prefHeight="45.0" prefWidth="299.0" text="Title&#10;" />
+      <TextArea fx:id="bodyBox" layoutX="14.0" layoutY="72.0" prefHeight="314.0" prefWidth="299.0" text="Text body&#10;" wrapText="true" />
+      <TextArea fx:id="titleBox" layoutX="14.0" layoutY="14.0" prefHeight="45.0" prefWidth="299.0" text="Title&#10;" wrapText="true" />
       <Button fx:id="prevButton" layoutX="516.0" layoutY="291.0" mnemonicParsing="false" onAction="#pButtonAction" text="Prev" />
       <Button fx:id="nxtButton" layoutX="516.0" layoutY="324.0" mnemonicParsing="false" onAction="#nxtButtonAction" text="Next" />
-      <TextArea fx:id="commentBox" editable="false" layoutX="322.0" layoutY="200.0" prefHeight="150.0" prefWidth="185.0" text="Comment area&#10;" />
+      <TextArea fx:id="commentBox" editable="false" layoutX="322.0" layoutY="200.0" prefHeight="150.0" prefWidth="185.0" text="Comment area&#10;" wrapText="true" />
       <TextField layoutX="322.0" layoutY="360.0" prefHeight="26.0" prefWidth="185.0" />
       <Button fx:id="comButton" layoutX="517.0" layoutY="360.0" mnemonicParsing="false" onAction="#comButtonAction" text="Comment" />
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="353.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />

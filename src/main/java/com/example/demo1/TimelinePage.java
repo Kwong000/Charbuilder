@@ -74,6 +74,5 @@ public class TimelinePage {
             TimelinePage newTP = new TimelinePage(title,text,null,imageFileOpened);
             System.out.println(newTP);
         }
-
     }
 }
