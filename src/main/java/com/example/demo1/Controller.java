@@ -5,6 +5,10 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+
+import java.io.File;
 
 import static com.example.demo1.TimelinePage.allTimelinePages;
 
@@ -17,7 +21,9 @@ public class Controller {
     public Button nxtButton;
     public TextArea commentBox;
     public Button comButton;
-   int p;
+    public ImageView imgBox;
+    int p;
+
     public void initialize() throws Exception {
       // scan data file to create all Time objects
         TimelinePage.readData();
@@ -28,6 +34,7 @@ public class Controller {
         TimelinePage p5 = allTimelinePages.get(4);
         TimelinePage p6 = allTimelinePages.get(5);
         // display first TimelineData object in View
+
         titleBox.setText(allTimelinePages.get(0).getTitle());
         bodyBox.setText(p1.getTextBody());
         p=1;
@@ -49,6 +56,8 @@ public class Controller {
         if (p==1){
             titleBox.setText(allTimelinePages.get(0).getTitle());
             bodyBox.setText(allTimelinePages.get(0).getTextBody());
+            imgBox.setImage(allTimelinePages.get(0).getRepIMG());
+
         }
         else if (p==2){
             titleBox.setText(allTimelinePages.get(1).getTitle());

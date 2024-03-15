@@ -1,6 +1,9 @@
 package com.example.demo1;
 
+import javafx.scene.image.Image;
+
 import java.io.File;
+import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -9,10 +12,10 @@ public class TimelinePage {
     String title;
     String textBody;
     String notes;
-    File repIMG;
+    Image repIMG;
 
 
-    public TimelinePage(String title, String textBody , String notes, File repIMG) {
+    public TimelinePage(String title, String textBody , String notes, Image repIMG) {
         this.title = title;
         this.textBody = textBody;
         this.repIMG = repIMG;
@@ -45,11 +48,11 @@ public class TimelinePage {
     public void setNotes(String notes) {
         this.notes = notes;
     }
-    public File getRepIMG() {
+    public Image getRepIMG() {
         return repIMG;
     }
 
-    public void setRepIMG(File repIMG) {
+    public void setRepIMG(Image repIMG) {
         this.repIMG = repIMG;
     }
 
@@ -69,9 +72,8 @@ public class TimelinePage {
             String title = dataScanner.next();
             String text = dataScanner.next();
             String imageFile = dataScanner.next();
-            File imageFileOpened = new File(imageFile);
-            String ignore = dataScanner.next();
-            TimelinePage newTP = new TimelinePage(title,text,null,imageFileOpened);
+            Image repIMG = new Image(new FileInputStream(imageFile));
+            TimelinePage newTP = new TimelinePage(title,text,null,repIMG);
             System.out.println(newTP);
         }
     }
