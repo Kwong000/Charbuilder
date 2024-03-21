@@ -41,7 +41,7 @@ public class Controller {
     }
 
     public void nxtButtonAction(ActionEvent actionEvent)throws Exception {
-        if (p<5){
+        if (p<6){
             p++;
             update();
         }
