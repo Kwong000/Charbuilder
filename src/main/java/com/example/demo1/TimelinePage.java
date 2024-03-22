@@ -11,7 +11,7 @@ public class TimelinePage {
     static ArrayList<TimelinePage> allTimelinePages;
     String title;
     String textBody;
-    String notes;
+    ArrayList<String> notes;
     Image repIMG;
 
 
@@ -19,7 +19,7 @@ public class TimelinePage {
         this.title = title;
         this.textBody = textBody;
         this.repIMG = repIMG;
-        this.notes = notes;
+        this.notes = new ArrayList<String>();
         if (allTimelinePages == null) {
             allTimelinePages = new ArrayList<TimelinePage>();
         }
@@ -41,11 +41,11 @@ public class TimelinePage {
     public void setTextBody(String textBody) {
         this.textBody = textBody;
     }
-    public String getNotes() {
+    public ArrayList<String> getNotes() {
         return notes;
     }
 
-    public void setNotes(String notes) {
+    public void setNotes(ArrayList<String> notes) {
         this.notes = notes;
     }
     public Image getRepIMG() {

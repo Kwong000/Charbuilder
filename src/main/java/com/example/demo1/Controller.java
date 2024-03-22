@@ -2,9 +2,7 @@ package com.example.demo1;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
@@ -19,9 +17,10 @@ public class Controller {
     public TextArea titleBox;
     public Button prevButton;
     public Button nxtButton;
-    public TextArea commentBox;
+    public ListView commentBox;
     public Button comButton;
     public ImageView imgBox;
+    public TextField commentthingy;
     int p;
 
     public void initialize() throws Exception {
@@ -53,45 +52,22 @@ public class Controller {
         }
     }
     public void update()throws Exception{
-        if (p==1){
-            titleBox.setText(allTimelinePages.get(0).getTitle());
-            bodyBox.setText(allTimelinePages.get(0).getTextBody());
-            imgBox.setImage(allTimelinePages.get(0).getRepIMG());
 
-        }
-        else if (p==2){
-            titleBox.setText(allTimelinePages.get(1).getTitle());
-            bodyBox.setText(allTimelinePages.get(1).getTextBody());
-            imgBox.setImage(allTimelinePages.get(1).getRepIMG());
-
-        }
-        else if (p==3){
-            titleBox.setText(allTimelinePages.get(2).getTitle());
-            bodyBox.setText(allTimelinePages.get(2).getTextBody());
-            imgBox.setImage(allTimelinePages.get(2).getRepIMG());
-
-        }
-        else if (p==4){
-            titleBox.setText(allTimelinePages.get(3).getTitle());
-            bodyBox.setText(allTimelinePages.get(3).getTextBody());
-            imgBox.setImage(allTimelinePages.get(3).getRepIMG());
-
-        }
-        else if (p==5){
-            titleBox.setText(allTimelinePages.get(4).getTitle());
-            bodyBox.setText(allTimelinePages.get(4).getTextBody());
-            imgBox.setImage(allTimelinePages.get(4).getRepIMG());
-
-        }
-        else if (p==6){
-            titleBox.setText(allTimelinePages.get(5).getTitle());
-            bodyBox.setText(allTimelinePages.get(5).getTextBody());
-            imgBox.setImage(allTimelinePages.get(5).getRepIMG());
-
+        titleBox.setText(allTimelinePages.get(p-1).getTitle());
+        bodyBox.setText(allTimelinePages.get(p-1).getTextBody());
+        imgBox.setImage(allTimelinePages.get(p-1).getRepIMG());
+        commentBox.getItems().clear();
+        for (String eachNote : allTimelinePages.get(p-1).getNotes()) {
+            commentBox.getItems().add(eachNote);
         }
     }
 
     public void comButtonAction(ActionEvent actionEvent) {
+        String typedTask = commentthingy.getText();
+        TimelinePage currentPage = TimelinePage.allTimelinePages.get(p-1);
+        currentPage.getNotes().add(typedTask);
+        System.out.println(typedTask);
+        commentBox.getItems().add(typedTask);
     }
 }
 
